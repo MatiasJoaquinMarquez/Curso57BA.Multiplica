@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(93, 91, 100, 0.774);
+}
+
+/* icono flotante de wsp */
+
+.contenedor-wsp {
+    background-color: rgb(4, 56, 4);
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.contenedor-wsp:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.icono-wsp {
+    width: 40px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+/* navegador (inicio, menu y contacto) */
+
+.navegador {
+    background-color: rgba(29, 23, 53, 0.774);
+    text-align: center;
+    display: flex;
+    padding: 5px;
+}
+
+.inicio {
+    color: white;
+    font-size:xx-large;
+    text-decoration: none;
+    padding-left: 400px;
+    padding-top: 80px;
+    display: flex;
+}
+
+.menu {
+    color: white;
+    font-size:xx-large;
+    text-decoration: none;
+    display: flex;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.contacto {
+    color: white;
+    font-size:xx-large;
+    text-decoration: none;
+    display: flex;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+/* logo de la pagina */
+
+.abuelita {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    border: 3px solid orange;
+}
+
+/* seccion para rellenar la pagina */
+
+.cajacontactos {
+    border-top: 3px solid orange;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+/* aca se encuentra el mapa donde queda el local*/
+
+.mapa {
+    background-color: rgb(177, 177, 106);
+    padding-top: 15px;
+}
+
+.articulomapa {
+    padding-top: 20px;
+}
+
+.maps {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.mapa2 {
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 5px;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: xx-large;
+}
+
+/* pie de pagina con las redes sociales */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.redes {
+    padding: 20px;
+}
+
+.face {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.insta {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+/* responsive desing */
+
+@media screen and (max-width: 500px) {
+    .cajaabuelita {
+        padding-top: 5px;
+        padding-left: 175px;
+    }
+
+    .navegador {
+        display: block;
+        text-align: left;
+    }
+
+    .inicio {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .menu {
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .contacto {
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .maps {
+        width: 25em;
+        height: 25em;
+    }
+}
